@@ -1,0 +1,18 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.footer {
+  padding: 50px 0;
+
+  @include color;
+
+  &__name {
+    margin-bottom: 15px;
+
+    @include skin;
+  }
+
+  &__copyright {
+    font-size: 13px;
+  }
+}

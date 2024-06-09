@@ -1,0 +1,24 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.section {
+  padding-top: 112px;
+  padding-bottom: 92px;
+
+  background-color: $color-light;
+
+  &__title {
+    margin-bottom: 50px;
+
+    text-align: center;
+
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  &__description {
+    text-align: center;
+
+    @include description;
+  }
+}

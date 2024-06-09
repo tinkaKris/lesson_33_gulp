@@ -1,0 +1,47 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  max-width: $container-sm;
+
+  gap: 34px;
+
+  &__title {
+    margin: 0;
+
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  &__description {
+    margin-bottom: 22px;
+
+    @include description;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 225px;
+    min-height: 65px;
+    padding: 0.5em;
+
+    letter-spacing: $letter-spacing;
+
+    @include color;
+  }
+
+  @media (max-width: 661px) {
+    align-items: center;
+
+    margin: 0 auto;
+
+    text-align: center;
+  }
+}
